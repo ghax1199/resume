@@ -3,19 +3,24 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background-image: url('https://i.imgur.com/oJcYq9M.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #222;
   transition: background 0.3s, color 0.3s;
-  background: linear-gradient(-45deg, #ffc0cb, #ffe4e1, #fcd7e2, #fff0f5);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
 }
 
 .light-mode {
   color: #222;
+  background-image: url('https://i.imgur.com/oJcYq9M.jpg');
 }
 
 .dark-mode {
   color: #fcd7e2;
-  background: linear-gradient(-45deg, #2a2a2a, #3a3a3a, #1e1e1e, #2f2f2f);
+  background-color: #1c1c1c;
+  background-image: none;
 }
 
 h1, h2 {
@@ -26,12 +31,13 @@ section {
   padding: 20px;
   margin: 10px auto;
   max-width: 600px;
-  background-color: transparent;
-  border: 1px solid #ffffff55;
+  background-color: white;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .dark-mode section {
-  border-color: #888;
+  background-color: #2a2a2a;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 
 @media (max-width: 600px) {
@@ -97,10 +103,4 @@ form button {
 }
 .contact-button:hover {
   background-color: #c2185b;
-}
-
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 }
