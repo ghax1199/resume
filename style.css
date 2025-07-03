@@ -1,0 +1,75 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+.light-mode {
+  background-color: #fff0f5; /* light pink */
+  color: #222;
+}
+.dark-mode {
+  background-color: #2a2a2a;
+  color: #fcd7e2;
+}
+h1, h2 {
+  text-align: center;
+  color: #d63384;
+}
+section {
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 600px;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 8px;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  section {
+    padding: 15px;
+  }
+}
+button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #d63384;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Cairo', sans-serif;
+}
+form button {
+  background-color: #d63384;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #d63384;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+.contact-button:hover {
+  background-color: #c2185b;
+}
