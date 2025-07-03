@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-image: url('https://i.imgur.com/oJcYq9M.jpg');
+  background-image: url('sakura-bg.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body {
 
 .light-mode {
   color: #222;
-  background-image: url('https://i.imgur.com/oJcYq9M.jpg');
+  background-image: url('sakura-bg.jpg');
 }
 
 .dark-mode {
