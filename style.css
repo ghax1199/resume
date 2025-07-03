@@ -4,10 +4,10 @@ body {
   padding: 0;
   line-height: 1.6;
   background-image: url('sakura-bg.jpg');
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   color: #222;
   transition: background 0.3s, color 0.3s;
 }
