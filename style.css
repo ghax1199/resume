@@ -1,22 +1,23 @@
 body {
-  background: linear-gradient(-45deg, #ffc0cb, #ffe4e1, #fcd7e2, #fff0f5);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-
   font-family: 'Cairo', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background-color: #ffe4ec;
+  color: #222;
   transition: background 0.3s, color 0.3s;
 }
+
 .light-mode {
-  background-color: #fff0f5; /* light pink */
+  background-color: #ffe4ec;
   color: #222;
 }
+
 .dark-mode {
-  background-color: #2a2a2a;
+  background-color: #1f1f1f;
   color: #fcd7e2;
 }
+
 h1, h2 {
   text-align: center;
   color: #d63384;
@@ -25,21 +26,24 @@ section {
   padding: 20px;
   margin: 10px auto;
   max-width: 600px;
-  background-color: rgba(255,255,255,0.9);
-  border-radius: 8px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+.dark-mode section {
+  background-color: #2a2a2a;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
 @media (max-width: 600px) {
   body {
-  background: linear-gradient(-45deg, #ffc0cb, #ffe4e1, #fcd7e2, #fff0f5);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-
     font-size: 16px;
   }
   section {
     padding: 15px;
   }
 }
+
 .toggle-button {
   display: block;
   margin: 20px auto;
@@ -50,6 +54,10 @@ section {
   border-radius: 5px;
   cursor: pointer;
 }
+.dark-mode .toggle-button {
+  background-color: #a82563;
+}
+
 form input, form textarea {
   width: 100%;
   padding: 10px;
@@ -58,6 +66,13 @@ form input, form textarea {
   border: 1px solid #ccc;
   font-family: 'Cairo', sans-serif;
 }
+.dark-mode form input,
+.dark-mode form textarea {
+  background-color: #2a2a2a;
+  color: #fcd7e2;
+  border: 1px solid #888;
+}
+
 form button {
   background-color: #d63384;
   color: white;
@@ -67,6 +82,10 @@ form button {
   border-radius: 5px;
   cursor: pointer;
 }
+.dark-mode form button {
+  background-color: #a82563;
+}
+
 .contact-button {
   display: inline-block;
   margin-top: 15px;
@@ -79,11 +98,4 @@ form button {
 }
 .contact-button:hover {
   background-color: #c2185b;
-}
-
-
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 }
