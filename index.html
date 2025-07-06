@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+
+  <button onclick="toggleMode()">Toggle Mode</button>
+
+  <header>
+    <h1>Ghadeer Ali</h1>
+    <p>Computer Science Student</p>
+  </header>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Bachelor's student in Computer Science with a passion for technology, problem-solving, and continuous learning. During my academic journey, I have worked on several university projects that involved web development, programming, and team collaboration. I enjoy exploring new tools and technologies and applying them to real-world problems. I'm always eager to grow my skills and contribute to impactful solutions.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Academic Projects</h2>
+    <ul>
+      <li>
+        <strong>Event Management System</strong><br>
+        A desktop application developed using Java and Swing that allows event organizers to create, manage, and track events. The system includes user roles (admin, organizer, participant), ticket booking, and seat availability features.
+      </li>
+      <li>
+        <strong>AI-Powered Resume Analyzer</strong><br>
+        A web-based system that uses artificial intelligence to analyze and score resumes based on job descriptions. It provides users with feedback and suggestions to improve their resume quality and relevance.
+      </li>
+      <li>
+        <strong>Smart To-Do List Web App</strong><br>
+        A responsive web application built with HTML, CSS, and JavaScript that helps users manage daily tasks efficiently. It includes features like deadlines, reminders, and task prioritization.
+      </li>
+      <li>
+        <strong>Data Analysis Dashboard</strong><br>
+        A Python project using Pandas and Matplotlib to analyze and visualize datasets. The dashboard presents insights such as trends, correlations, and key statistics in a user-friendly interface.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <p>
+      I am proficient in multiple programming languages and technologies that I have applied throughout my academic projects. My core technical skills include:
+    </p>
+    <ul>
+      <li>Programming Languages: Java, Python, JavaScript, HTML, CSS</li>
+      <li>Web Development: Responsive Design, DOM Manipulation, GitHub Pages</li>
+      <li>Tools & Technologies: Git, VS Code, NetBeans, SQLite</li>
+      <li>Basic knowledge of AI concepts and data visualization</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:ghadeeralix66@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="subject">Subject:</label><br>
+      <input type="text" id="subject" name="subject" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Ghadeer Ali</p>
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark-mode");
+      document.body.classList.toggle("light-mode");
+    }
+
+    // Detect browser language and adjust language attribute
+    document.documentElement.lang = navigator.language.startsWith('ar') ? 'ar' : 'en';
+    document.documentElement.dir = navigator.language.startsWith('ar') ? 'rtl' : 'ltr';
+  </script>
+</body>
+</html>
