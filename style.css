@@ -1,4 +1,8 @@
 body {
+  background: linear-gradient(-45deg, #ffc0cb, #ffe4e1, #fcd7e2, #fff0f5);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+
   font-family: 'Cairo', sans-serif;
   margin: 0;
   padding: 0;
@@ -6,40 +10,43 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 .light-mode {
-  background-color: #f9f9f9;
+  background-color: #fff0f5; /* light pink */
   color: #222;
 }
 .dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #2a2a2a;
+  color: #fcd7e2;
 }
 h1, h2 {
   text-align: center;
-  color: #4a90e2;
+  color: #d63384;
 }
 section {
   padding: 20px;
   margin: 10px auto;
   max-width: 600px;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.9);
   border-radius: 8px;
 }
 @media (max-width: 600px) {
   body {
+  background: linear-gradient(-45deg, #ffc0cb, #ffe4e1, #fcd7e2, #fff0f5);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+
     font-size: 16px;
   }
   section {
     padding: 15px;
   }
 }
-button {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  padding: 10px;
-  border: none;
-  background-color: #4a90e2;
+.toggle-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #d63384;
   color: white;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -52,11 +59,31 @@ form input, form textarea {
   font-family: 'Cairo', sans-serif;
 }
 form button {
-  background-color: #4a90e2;
+  background-color: #d63384;
   color: white;
   padding: 10px 20px;
   border: none;
   margin-top: 10px;
   border-radius: 5px;
   cursor: pointer;
+}
+.contact-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #d63384;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+.contact-button:hover {
+  background-color: #c2185b;
+}
+
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
